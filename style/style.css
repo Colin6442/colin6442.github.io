@@ -1,17 +1,20 @@
 @font-face { font-family: "Lora"; font-weight: serif; src: url('Lora-Regular.ttf');}
+@font-face { font-family: "Comfortaa"; font-weight: normal; src: url('Comfortaa-Medium.ttf');}
 
 :root {
-	--lightGrey: rgba(87, 93, 98, 0.525);
-	--darkGrey: #1f2833;
+	--lightGrey: #383b4c;
+	--darkGrey: #1e1e1e;
 	--clear: #ffffff00;
 	--navBar: white;
+	--btnText: #ba2d0b;
+	--normalText: #d6f2ff;
 }
-  
+
 body {
 	background-color: var(--darkGrey);
 	margin: 0;
 	padding: 0;
-	font-family: "Lora"
+	font-family: "Lora";
 }
 
 .main{
@@ -19,17 +22,35 @@ body {
 	position: fixed;
 	width: 70vw;
 	height: 93vh;
-	margin-top: 7vh;
 	margin-left: 15vw;
 	margin-right: 15vw;
-	background-color: var(--lightGrey);
+	/* background-color: var(--lightGrey); */
+	/* outline: 2px solid white; */
+}
+
+.mainLeft{
+	position: fixed;
+	width: 35vw;
+	height: 93vh;
+	margin-left: 15vw;
+	margin-right: 15vw;
+	background: linear-gradient(to right, #1e1e1e 0%, #383b4c 100%);
+}
+
+.mainRight{
+	position: fixed;
+	width: 35vw;
+	height: 93vh;
+	margin-left: 50vw;
+	margin-right: 15vw;
+	background: linear-gradient(to left, #1e1e1e 0%, #383b4c 100%);
 }
 
 button{
 	font-family: inherit;
 	width: 100%;
 	height: 100%;
-	background-color: var(--clear);
+	background-color:#0000000f;
 	border: 1px solid var(--clear);
 	color: black;
 	padding: 0px 0px;
@@ -42,43 +63,90 @@ button{
 
 button:hover {
 	/* background-color: #1f283360; */
-	color: #235ea5;
+	color: var(--btnText);
 }
 
 form{
 	width: 100%;
 	height: 100%;
 	position: relative;
-	padding-left: 20px;
-	padding-right: 20px;
+	/* padding-left: 20px;
+	padding-right: 20px; */
 }
 
 .nav{
-	/* display: grid;
-	grid-template-columns: auto auto auto auto; */
-	position:fixed;
+	/* position:fixed; */
 	height: 7vh;
-    width: 100%;
-	/* margin: 6px; */
-    background-color: #ffffff;
+	width: 100%;
+	background-color: #ffffff;
+	outline: 2px solid #000000;
 	/* border-radius: 20px; */
+}
+
+.homeText{
+	font-family: "Comfortaa";
+	width: 90%;
+	margin: 10% 5%;
+	padding: 10% 0%;
+	background-color: var(--lightGrey);
+	font-size: 100px;
+	text-align: center;
+	color: var(--normalText);
+	background-color: #ffffff0f;
+	outline: 1px solid rgb(0, 0, 0);
 }
 
 .resume{
 	position:fixed;
 	height: 90vh;
-    width: 50vw;
-	margin-top: 9vh;
+	width: 50vw;
+	margin-top: 1vh;
 	margin-left: 25vw;
 	margin-right: 25vw;
 	background-color: aliceblue;
 }
 
+.projectTables{
+	height: 98%;
+	width: 98%;
+	margin-top: 1%;
+	margin-left: 1%;
+	background-color: var(--lightGrey);
+	font-size: 50px;
+	text-align: left;
+	outline: 1px solid blue;
+}
+
+.contactText{
+	height: auto;
+	width: 70%;
+	margin-top: 10%;
+	margin-left: 15%;
+	padding: 5% 0%;
+	background-color: var(--lightGrey);
+	font-size: 30px;
+	text-align: center;
+	color: var(--normalText);
+	background-color: #ffffff0f;
+	outline: 1px solid rgb(0, 0, 0);
+}
+
+a{
+	color: inherit;
+}
+
+p{
+	padding: 0;
+	margin: 0;
+}
+
 table, tr, th{
-	padding: 0px;
+	padding: 0;
+	margin: 0px;
+	/* outline: 1px solid red; */
 }
 
 th{
-	margin: 50px;
+	width: 10vw;
 	height: 6.5vh;
 }
