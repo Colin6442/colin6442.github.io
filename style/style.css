@@ -8,6 +8,7 @@
 	--navBar: white;
 	--btnText: #ba2d0b;
 	--normalText: #d6f2ff;
+	--lighter: #ffffff0f;
 }
 
 body {
@@ -57,13 +58,17 @@ button{
 	text-align: center;
 	text-decoration: none;
 	display: inline-block;
-	font-size: 30px;
+	font-size: 27px;
 	/* border-radius: 8px; */
 }
 
 button:hover {
 	/* background-color: #1f283360; */
 	color: var(--btnText);
+}
+
+.buttonPage{
+	color: #bb644f;
 }
 
 form{
@@ -89,10 +94,10 @@ form{
 	margin: 10% 5%;
 	padding: 10% 0%;
 	background-color: var(--lightGrey);
-	font-size: 100px;
+	font-size: 50px;
 	text-align: center;
 	color: var(--normalText);
-	background-color: #ffffff0f;
+	background-color: var(--lighter);
 	outline: 1px solid rgb(0, 0, 0);
 }
 
@@ -106,15 +111,73 @@ form{
 	background-color: aliceblue;
 }
 
-.projectTables{
-	height: 98%;
+.projectsTableContainer::-webkit-scrollbar{
+	display: none;
+}
+
+.projectsTableContainer{
+	height: 97%;
+	overflow:auto;
+	-ms-overflow-style: none;
+	scrollbar-width: none; 
 	width: 98%;
-	margin-top: 1%;
-	margin-left: 1%;
-	background-color: var(--lightGrey);
-	font-size: 50px;
-	text-align: left;
-	outline: 1px solid blue;
+	margin: 1%;
+	background-color: var(--lighter);
+	font-size: 30px;
+	text-align: center;
+	color: var(--normalText);
+	/* outline: 1px solid rgb(0, 204, 255); */
+}
+
+.projectsTable{
+	width: 80%; 
+	margin: 10%;
+	outline: 1px solid rgb(0, 0, 0);
+}
+
+.singleProjectContainer:hover{
+	/* height: 30vh; */
+	background-color: var(--lighter);
+}
+
+.singleProjectContainer{
+	transition: 0.5s;
+	height: 20vh;
+	width: 100%;
+	/* margin-top: 0; */
+	/* margin: auto; */
+	text-align: center;
+	overflow: hidden;
+}
+
+.singleProject{
+	margin-top: 0;
+}
+
+.imgs{
+	margin-right: 59%;
+}
+
+.projectText{
+	font-size: 15px;
+}
+
+.projectRows{
+	width: 20vw; 
+	/* outline: 2px solid black; */
+}
+
+.cndbLeft{
+	position: relative;
+	width: 40%;
+	background-color: red;
+}
+
+.cndbRight{
+	position: relative;
+	margin-left: 40%;
+	width: 60%;
+	background-color: blue;
 }
 
 .contactText{
@@ -127,7 +190,7 @@ form{
 	font-size: 30px;
 	text-align: center;
 	color: var(--normalText);
-	background-color: #ffffff0f;
+	background-color: var(--lighter);
 	outline: 1px solid rgb(0, 0, 0);
 }
 
@@ -140,13 +203,20 @@ p{
 	margin: 0;
 }
 
+img{
+	padding: 0;
+	margin: 0;
+}
+
 table, tr, th{
 	padding: 0;
-	margin: 0px;
+	margin: 0;
 	/* outline: 1px solid red; */
+	/* overflow: hidden; */
 }
 
 th{
 	width: 10vw;
 	height: 6.5vh;
+	overflow: hidden;
 }
