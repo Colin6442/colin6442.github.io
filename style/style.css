@@ -132,7 +132,6 @@ form{
 .projectsTable{
 	width: 80%; 
 	margin: 10%;
-	outline: 1px solid rgb(0, 0, 0);
 }
 
 .singleProjectContainer:hover{
@@ -144,14 +143,24 @@ form{
 	transition: 0.5s;
 	height: 20vh;
 	width: 100%;
-	/* margin-top: 0; */
-	/* margin: auto; */
 	text-align: center;
 	overflow: hidden;
 }
 
 .singleProject{
 	margin-top: 0;
+}
+
+.colLeft{
+	width: 50%;
+	transition: 0.5s;
+	/* outline: 2px solid rgb(255, 255, 255); */
+}
+
+.colRight{
+	width: 50%;
+	transition: 0.5s;
+	/* outline: 2px solid rgb(255, 255, 255); */
 }
 
 .imgs{
@@ -164,7 +173,7 @@ form{
 
 .projectRows{
 	width: 20vw; 
-	/* outline: 2px solid black; */
+	/* outline: 2px solid rgb(255, 255, 255); */
 }
 
 .cndbLeft{
