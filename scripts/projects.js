@@ -3,9 +3,10 @@
 var prev = -1;
 
 function onProject (element, size) {
+	var num = 8;
 	let pc = [];
 	let p = [];
-	for(var i = 0; i < 10; i++){
+	for(var i = 0; i < num; i++){
 		pc.push("pc"+String(i));
 		p.push("p"+String(i));
 	}
@@ -27,7 +28,7 @@ function onProject (element, size) {
 
 	if(curIndex != prev){
 	
-		for(var i = 0; i < 10; i++){
+		for(var i = 0; i < num; i++){
 			if(pc[i] != current){
 				document.getElementById(pc[i]).style.height = "20vh";
 				document.getElementById(pc[i]).style.backgroundColor = "";
@@ -69,7 +70,7 @@ function onProject (element, size) {
 		prev = curIndex;
 		
 	}else{
-		for(var i = 0; i < 10; i++){
+		for(var i = 0; i < num; i++){
 			document.getElementById(pc[i]).style.height = "20vh";
 			document.getElementById(pc[i]).style.backgroundColor = "";
 		}
