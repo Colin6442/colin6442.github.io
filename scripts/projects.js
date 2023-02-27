@@ -1,8 +1,6 @@
-//Pass element and size in vh
-
 var prev = -1;
 
-function onProject (element, size) {
+function onProject (element) {
 	var num = 8;
 	let pc = [];
 	let p = [];
@@ -10,11 +8,9 @@ function onProject (element, size) {
 		pc.push("pc"+String(i));
 		p.push("p"+String(i));
 	}
-	var change = element.style;
-	var current = element.id;
+
+	var current = "pc" + element.id;
 	var curIndex = pc.indexOf(current);
-	change.height = size;
-	change.backgroundColor = "#ffffff0f";
 
 	let Left = false;
 	let Right = false;
@@ -25,27 +21,18 @@ function onProject (element, size) {
 		Right = true;
 	}
 
-
 	if(curIndex != prev){
 	
 		for(var i = 0; i < num; i++){
 			if(pc[i] != current){
-				document.getElementById(pc[i]).style.height = "20vh";
+				// document.getElementById(p[i]).style.display = "none";
+				document.getElementById(p[i]).style.height = "0";
 				document.getElementById(pc[i]).style.backgroundColor = "";
 			}else{
-				document.getElementById(p[i]).style.marginTop = "0";
-				if(Left){
-					document.getElementById(pc[i+1]).style.height = size;
-					document.getElementById(pc[i+1]).style.backgroundColor = "";
-					document.getElementById(p[i+1]).style.marginTop = "100vh";
-					i++;
-				}
-				if(Right){
-					document.getElementById(pc[i-1]).style.height = size;
-					document.getElementById(pc[i-1]).style.backgroundColor = "";
-					document.getElementById(p[i-1]).style.marginTop = "100vh";
-
-				}
+				// document.getElementById(p[i]).style.display = "";
+				document.getElementById(p[i]).style.height = "100%";
+				document.getElementById(pc[i]).style.height = "fit-content";
+				document.getElementById(pc[i]).style.backgroundColor = "#ffffff0f";
 			}
 		}
 
@@ -71,7 +58,8 @@ function onProject (element, size) {
 		
 	}else{
 		for(var i = 0; i < num; i++){
-			document.getElementById(pc[i]).style.height = "20vh";
+			// document.getElementById(p[i]).style.display = "none";
+			document.getElementById(p[i]).style.height = "0";
 			document.getElementById(pc[i]).style.backgroundColor = "";
 		}
 		for(let element of document.getElementsByClassName("colLeft")){

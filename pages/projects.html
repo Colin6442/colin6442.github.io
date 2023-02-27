@@ -42,54 +42,46 @@
 				<table class="projectsTable" cellspacing="30">
 					<tr class="projectRows"> <!-- 0 / 1 -->
 						<th class="colLeft">
-							<div id="pc0" class="singleProjectContainer" onclick="onProject(this, '120vh')">
-								<p style="padding: 8vh 0vw;">Senior Capstone</p>
+							<div id="pc0" class="singleProjectContainer">
+								<p id="0" style="padding: 8vh 0vw; user-select: none;"
+								onclick="onProject(this)">Senior Capstone</p>
+								
 								<div id="p0" class="singleProject">
-									<!-- <iframe width="100%" height="38%" src="https://www.youtube.com/embed/iSqGwEZiwyI" allowfullscreen></iframe> -->
+									<iframe width="100%" height="400" src="https://www.youtube.com/embed/iSqGwEZiwyI" allowfullscreen></iframe>
 									<div class="projectTextBox">
 										<p class="projectText">
 										This was a program created for Western Digital as part of my senior
 										project. I worked with three other students on this semester long
-										project. My role was team lead, which consisted of delegating tasks 
-										within the team and communicating with the representatives at Western
-										Digital. Successfully negotiated the scope of the project
-										and provided a dashboard that collected/displayed information about 
-										their laboratory computers.
-											
-										</p>
-										<p class="projectText">
-										The Discord bot is designed to be able to be able to serve 
-										multiple groups and multiple courses for each group. Users are
-										able to send commands to request updates on specific classes
-										using the course ID number. When the bot recieves the update
-										list, it will check if users are requesting any of the classes
-										in the list and send a notification.
+										project. I had the role of team lead, which consisted of delegating 
+										tasks within the team and communicating with the representatives at 
+										Western Digital. Once we were in contact with the representatives,
+										we negotiated down the scope of the project since we only had one 
+										semester to complete the project. The project we delivered was a 
+										dashboard that collected and displayed information about their 
+										laboratory computers.
 										</p>
 									</div>
 								</div>
 							</div>
 						</th>
 						<th class="colRight">
-							<div id="pc1" class="singleProjectContainer" onclick="onProject(this, '60vh')">
-								<p style="padding: 8vh 0vw;">Networking Project</p>
+							<div id="pc1" class="singleProjectContainer">
+								<p id="1" style="padding: 8vh 0vw; user-select: none;"
+								onclick="onProject(this)">Networking Project</p>
+								
 								<div id="p1" class="singleProject">
 									<div class="projectTextBox">
 										<p class="projectText">
-										This program was created to notify users when a class they 
-										have been trying to sign up for has an open seat. There are
-										two parts to the program, the web scraper and the Discord
-										bot. The web scraper reads information about every class 
-										offered that semester and keeps track of how many seats are 
-										available for each class. If the number of seats increased or 
-										decreased it would add it to the update list.
-										</p>
-										<p class="projectText">
-										The Discord bot is designed to be able to be able to serve 
-										multiple groups and multiple courses for each group. Users are
-										able to send commands to request updates on specific classes
-										using the course ID number. When the bot recieves the update
-										list, it will check if users are requesting any of the classes
-										in the list and send a notification.
+										This was a project for a networks class that covered 
+										design concepts and implementation features of computer networks. It 
+										was a three part project that spanned the entire semester. We worked on 
+										implementing our own rudimentary internet using simulated nodes 
+										created from a 'skeleton project'. We worked on flooding and 
+										neighbor discovery, into creating routing tables making use of 
+										dijkstra's algorithm. We then implemented packet reliability with 
+										TCP. We then built a chat program that could run on our simulated 
+										internet. This was the most difficult class and project I worked
+										on in college.
 										</p>
 									</div>
 								</div>
@@ -98,22 +90,42 @@
 					</tr>
 					<tr class="projectRows"> <!-- 2 / 3 -->
 						<th class="colLeft">
-							<div id="pc2" class="singleProjectContainer" onclick="onProject(this, '50vh')">
-								<p style="padding: 8vh 0vw;">SuperHexagon Bot</p>
+							<div id="pc2" class="singleProjectContainer">
+								<p id="2" style="padding: 8vh 0vw; user-select: none;"
+								onclick="onProject(this)">SuperHexagon Bot</p>
+								
 								<div id="p2" class="singleProject">
-									123
+									<video width="100%" controls>
+										<source src="../content/SuperHexagonDemo.mp4" type="video/mp4">
+									</video>
+									<div class="projectTextBox">
+										<p class="projectText">
+										This was a personal project I worked on to get more experience with
+										image processing. The purpose of the game "SuperHexagon" is to pilot
+										the player away from incoming walls, so I created a program that would
+										be able to do that. It takes a screenshot every couple of 
+										milliseconds and analyzes the state of the game. Once it computes 
+										where all of the walls are, an algorithm determines the best action 
+										for the player to take. The video above shows a demo and what the 
+										program sees layered on top of the game.
+										</p>
+										
+										<div style="margin: 2% 0"><a style="color:var(--link)" href="https://github.com/Colin6442/SuperHexagon_Bot" target="_blank">-- GitHub Link --</a></div>
+									</div>
 								</div>
 							</div>
 						</th> 
 						<th class="colRight">
-							<div id="pc3" class="singleProjectContainer" onclick="onProject(this, '86vh')">
-								<p style="padding: 8vh 0vw;">UCM Course Notification</p>
+							<div id="pc3" class="singleProjectContainer">
+								<p id="3" style="padding: 8vh 0vw; user-select: none;" 
+								onclick="onProject(this)">UCM Course Notification</p>
+								
 								<div id="p3" class="singleProject">
 									<table>
 										<th style="width: 40%; height: 100%;">
 											<img class="imgs" src="../content/Courses.png" width="100%" height="100%">
 										</th>
-										<th style="vertical-align: top;">
+										<th style="width: 60%; height: 100%; vertical-align: top;">
 											<div class="projectTextBox">
 												<p class="projectText">
 												This program was created to notify users when a class they 
@@ -125,14 +137,14 @@
 												decreased it would add it to the update list.
 												</p>
 												<p class="projectText">
-												The Discord bot is designed to be able to be able to serve 
+												The Discord bot is designed to be able to be able to serve  
 												multiple groups and multiple courses for each group. Users are
 												able to send commands to request updates on specific classes
-												using the course ID number. When the bot recieves the update
+												using the course ID number. When the bot receives the update
 												list, it will check if users are requesting any of the classes
 												in the list and send a notification.
 												</p>
-												<div style="margin-top: 7.5%"><a style="color:#5757ff" href="https://github.com/Colin6442/UCMerced-Course-Notification-Discord-Bot" target="_blank">-- GitHub Link --</a></div>
+												<div style="margin: 2% 0"><a style="color: var(--link)" href="https://github.com/Colin6442/UCMerced-Course-Notification-Discord-Bot" target="_blank">-- GitHub Link --</a></div>
 											</div>
 										</th>
 									</table>
@@ -142,15 +154,29 @@
 					</tr>
 					<tr class="projectRows"> <!-- 4 / 5 -->
 						<th class="colLeft">
-							<div id="pc4" class="singleProjectContainer" onclick="onProject(this, '50vh')">
-								<p style="padding: 8vh 0vw;">EyeBook Reader</p>
+							<div id="pc4" class="singleProjectContainer">
+								<p id="4" style="padding: 8vh 0vw; user-select: none;"
+								onclick="onProject(this)">EyeBook Reader</p>
+								
 								<div id="p4" class="singleProject">
+									<video width="100%" controls>
+										<source src="../content/EyeBookReaderDemo.mp4" type="video/mp4">
+									</video>
+									<div class="projectTextBox">
+										<p class="projectText">
+										</p>
+
+										<div style="margin: 2% 0"><a style="color: var(--link)" href="https://github.com/Colin6442/eyebook-reader" target="_blank">-- GitHub Link --</a></div>
+									</div>
+									
 								</div>
 							</div>
 						</th> 
 						<th class="colRight">
-							<div id="pc5" class="singleProjectContainer" onclick="onProject(this, '50vh')">
-								<p style="padding: 8vh 0vw;">GDC GameJam</p>
+							<div id="pc5" class="singleProjectContainer">
+								<p id="5" style="padding: 8vh 0vw; user-select: none;"
+								onclick="onProject(this)">GDC GameJam</p>
+								
 								<div id="p5" class="singleProject">
 
 								</div>
@@ -159,15 +185,19 @@
 					</tr>
 					<tr class="projectRows"> <!-- 6 / 7 -->
 						<th class="colLeft">
-							<div id="pc6" class="singleProjectContainer" onclick="onProject(this, '50vh')">
-								<p style="padding: 8vh 0vw;">Snake Game</p>
+							<div id="pc6" class="singleProjectContainer">
+								<p id="6" style="padding: 8vh 0vw; user-select: none;"
+								onclick="onProject(this)">Snake Game</p>
+								
 								<div id="p6" class="singleProject">
 								</div>
 							</div>
 						</th> 
 						<th class="colRight">
-							<div id="pc7" class="singleProjectContainer" onclick="onProject(this, '50vh')">
-								<p style="padding: 8vh 0vw;">Latency Graph</p>
+							<div id="pc7" class="singleProjectContainer">
+								<p id="7" style="padding: 8vh 0vw; user-select: none;"
+								onclick="onProject(this)">Latency Graph</p>
+								
 								<div id="p7" class="singleProject">
 
 								</div>

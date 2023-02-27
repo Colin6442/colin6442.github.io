@@ -10,7 +10,7 @@
 	--normalText: #d6f2ff;
 	--lighter: #ffffff20;
 	--darker: #00000030;
-	--link: #5757ff;
+	--link: #5082ff;
 	--bgDark: #1e1e1ee5;
 	--bgLight: #383b4ce5;
 }
@@ -59,24 +59,25 @@ button{
 	font-family: inherit;
 	width: 100%;
 	height: 100%;
-	background-color:#0000000f;
+	background-color:#00000000;
 	border: 1px solid var(--clear);
 	color: black;
 	padding: 0px 0px;
 	text-align: center;
-	text-decoration: none;
-	display: inline-block;
+	/* text-decoration: none; */
+	/* display: inline-block; */
 	font-size: 3.2vh;
-	/* border-radius: 8px; */
+	/* border-radius: 4px; */
 }
 
 button:hover {
-	/* background-color: #1f283360; */
+	background-color:#0000000f;
 	color: var(--btnText);
 }
 
 .buttonPage{
-	color: #bb644f;
+	background-color:#00000028;
+	color: var(--btnText);
 }
 
 form{
@@ -151,8 +152,8 @@ form{
 }
 
 .singleProjectContainer{
-	transition: 0.5s;
-	height: 20vh;
+	transition: all 0.5s;
+	/* height: 20vh; */
 	width: calc(100% - 2px);
 	text-align: center;
 	overflow: hidden;
@@ -162,8 +163,10 @@ form{
 }
 
 .singleProject{
+	/* transition: all 0.5s; */
+	/* display: none; */
 	margin-top: 0;
-	height: 100%;
+	height: 0;
 	border-top: 1px solid rgb(255, 255, 255);
 	background-color: var(--darker);
 	font-size: calc(1.5vh + 1vw);
@@ -179,6 +182,7 @@ form{
 .colRight{
 	width: 50%;
 	transition: 0.5s;
+	margin-left: 5vw;
 	/* outline: 2px solid rgb(255, 255, 255); */
 }
 
@@ -189,7 +193,7 @@ form{
 .projectTextBox{
 	/* margin: 0 1%; */
 	padding: 2% 0;
-	height: 96%;
+	height: 100%;
 	background-color: var(--darker);
 }
 .projectText{
