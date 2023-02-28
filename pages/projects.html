@@ -43,8 +43,16 @@
 					<tr class="projectRows"> <!-- 0 / 1 -->
 						<th class="colLeft">
 							<div id="pc0" class="singleProjectContainer">
-								<p id="0" style="padding: 8vh 0vw; user-select: none;"
-								onclick="onProject(this)">Senior Capstone</p>
+								<div id="0" onclick="onProject(this)">
+									<div class="languages">
+										<table style="margin: 0 auto;">
+											<th><img style="margin-top:14%; width:35%; height:100%;" src="../content/py.png"></th>
+											<th><img style="margin-top:14%; width:45%; height:100%;" src="../content/web.png"></th>
+											<th><img style="margin-top:14%; width:40%; height:100%;" src="../content/php.png"></th>
+										</table>
+									</div>
+									<p class="projectTitle">Senior Capstone</p>
+								</div>
 								
 								<div id="p0" class="singleProject">
 									<iframe width="100%" height="400" src="https://www.youtube.com/embed/iSqGwEZiwyI" allowfullscreen></iframe>
@@ -66,22 +74,28 @@
 						</th>
 						<th class="colRight">
 							<div id="pc1" class="singleProjectContainer">
-								<p id="1" style="padding: 8vh 0vw; user-select: none;"
-								onclick="onProject(this)">Networking Project</p>
+								<div id="1" onclick="onProject(this)">
+									<div class="languages">
+										<table style="margin: 0 auto;">
+											<th><img style="margin-top:10%; width:35%; height:100%;" src="../content/c.png"></th>
+										</table>
+									</div>
+									<p class="projectTitle">Networking Project</p>
+								</div>
 								
 								<div id="p1" class="singleProject">
 									<div class="projectTextBox">
 										<p class="projectText">
 										This was a project for a networks class that covered 
 										design concepts and implementation features of computer networks. It 
-										was a three part project that spanned the entire semester. We worked on 
-										implementing our own rudimentary internet using simulated nodes 
-										created from a 'skeleton project'. We worked on flooding and 
-										neighbor discovery, into creating routing tables making use of 
-										dijkstra's algorithm. We then implemented packet reliability with 
-										TCP. We then built a chat program that could run on our simulated 
-										internet. This was the most difficult class and project I worked
-										on in college.
+										was a three part project that spanned the entire semester. The idea
+										behind it was to create a rudimentary internet using simulated nodes 
+										derived from a 'skeleton project'. The first part of the project was 
+										flooding and neighbor discovery. The second was routing tables that 
+										used dijkstra's algorithm. The third part was packet reliability with 
+										TCP. Once all three were finished, the program should be able to send
+										a string of data from one node in the network to any other node that
+										was connected.
 										</p>
 									</div>
 								</div>
@@ -91,8 +105,14 @@
 					<tr class="projectRows"> <!-- 2 / 3 -->
 						<th class="colLeft">
 							<div id="pc2" class="singleProjectContainer">
-								<p id="2" style="padding: 8vh 0vw; user-select: none;"
-								onclick="onProject(this)">SuperHexagon Bot</p>
+								<div id="2" onclick="onProject(this)">
+									<div class="languages">
+										<table style="margin: 0 auto;">
+											<th><img style="margin-top:8%; width:50%; height:130%;" src="../content/c++.png"></th>
+										</table>
+									</div>
+									<p class="projectTitle">SuperHexagon Bot</p>
+								</div>
 								
 								<div id="p2" class="singleProject">
 									<video width="100%" controls>
@@ -117,8 +137,14 @@
 						</th> 
 						<th class="colRight">
 							<div id="pc3" class="singleProjectContainer">
-								<p id="3" style="padding: 8vh 0vw; user-select: none;" 
-								onclick="onProject(this)">UCM Course Notification</p>
+								<div id="3" onclick="onProject(this)">
+									<div class="languages">
+										<table style="margin: 0 auto;">
+											<th><img style="margin-top:10%; width:35%; height:100%;" src="../content/py.png"></th>
+										</table>
+									</div>
+									<p class="projectTitle">UCM Course Notification</p>
+								</div>
 								
 								<div id="p3" class="singleProject">
 									<table>
@@ -155,8 +181,14 @@
 					<tr class="projectRows"> <!-- 4 / 5 -->
 						<th class="colLeft">
 							<div id="pc4" class="singleProjectContainer">
-								<p id="4" style="padding: 8vh 0vw; user-select: none;"
-								onclick="onProject(this)">EyeBook Reader</p>
+								<div id="4" onclick="onProject(this)">
+									<div class="languages">
+										<table style="margin: 0 auto;">
+											<th><img style="margin-top:8%; width:60%; height:120%;" src="../content/web.png"></th>
+										</table>
+									</div>
+									<p class="projectTitle">EyeBook Reader</p>
+								</div>
 								
 								<div id="p4" class="singleProject">
 									<video width="100%" controls>
@@ -164,8 +196,17 @@
 									</video>
 									<div class="projectTextBox">
 										<p class="projectText">
+										This was a project for a Human-Computer-Interaction course. I worked
+										in a team with three other classmates. We were tasked with creating 
+										an interface that would allow people with disabilites or missing limbs
+										to more easily interact with an e-reader. Our solution was to use eye
+										tracking to allow scrolling of the page if you look at the top or
+										bottom of the page. I was tasked with implementing the eye tracking
+										onto our website. We used a library called WebGazer to track the eye
+										movements of the user. Our finished product allowed the user to upload
+										a pdf or txt document and scroll up and down when looking at the top and
+										bottom of the screen.
 										</p>
-
 										<div style="margin: 2% 0"><a style="color: var(--link)" href="https://github.com/Colin6442/eyebook-reader" target="_blank">-- GitHub Link --</a></div>
 									</div>
 									
@@ -174,10 +215,34 @@
 						</th> 
 						<th class="colRight">
 							<div id="pc5" class="singleProjectContainer">
-								<p id="5" style="padding: 8vh 0vw; user-select: none;"
-								onclick="onProject(this)">GDC GameJam</p>
+								<div id="5" onclick="onProject(this)">
+									<div class="languages">
+										<table style="margin: 0 auto;">
+											<th><img style="margin-top:10%; width:35%; height:100%;" src="../content/py.png"></th>
+										</table>
+									</div>
+									<p class="projectTitle">Shield Man - GDC Game</p>
+								</div>
 								
 								<div id="p5" class="singleProject">
+									<video width="100%" controls muted>
+										<source src="../content/GDC_GameDemo.mp4" type="video/mp4">
+									</video>
+									<div class="projectTextBox">
+										<p class="projectText">
+										This was a project for a Human-Computer-Interaction course. I worked
+										in a team with three other classmates. We were tasked with creating 
+										an interface that would allow people with disabilites or missing limbs
+										to more easily interact with an e-reader. Our solution was to use eye
+										tracking to allow scrolling of the page if you look at the top or
+										bottom of the page. I was tasked with implementing the eye tracking
+										onto our website. We used a library called WebGazer to track the eye
+										movements of the user. Our finished product allowed the user to upload
+										a pdf or txt document and scroll up and down when looking at the top and
+										bottom of the screen.
+										</p>
+										<div style="margin: 2% 0"><a style="color: var(--link)" href="https://github.com/Colin6442/eyebook-reader" target="_blank">-- GitHub Link --</a></div>
+									</div>
 
 								</div>
 							</div>
@@ -186,41 +251,71 @@
 					<tr class="projectRows"> <!-- 6 / 7 -->
 						<th class="colLeft">
 							<div id="pc6" class="singleProjectContainer">
-								<p id="6" style="padding: 8vh 0vw; user-select: none;"
-								onclick="onProject(this)">Snake Game</p>
+								<div id="6" onclick="onProject(this)">
+									<div class="languages">
+										<table style="margin: 0 auto;">
+											<th><img style="margin-top:8%; width:50%; height:130%;" src="../content/c++.png"></th>
+										</table>
+									</div>
+									<p class="projectTitle">Snake Game</p>
+								</div>
 								
 								<div id="p6" class="singleProject">
+									<video width="100%" controls>
+										<source src="../content/EyeBookReaderDemo.mp4" type="video/mp4">
+									</video>
+									<div class="projectTextBox">
+										<p class="projectText">
+										This was a project for a Human-Computer-Interaction course. I worked
+										in a team with three other classmates. We were tasked with creating 
+										an interface that would allow people with disabilites or missing limbs
+										to more easily interact with an e-reader. Our solution was to use eye
+										tracking to allow scrolling of the page if you look at the top or
+										bottom of the page. I was tasked with implementing the eye tracking
+										onto our website. We used a library called WebGazer to track the eye
+										movements of the user. Our finished product allowed the user to upload
+										a pdf or txt document and scroll up and down when looking at the top and
+										bottom of the screen.
+										</p>
+										<div style="margin: 2% 0"><a style="color: var(--link)" href="https://github.com/Colin6442/eyebook-reader" target="_blank">-- GitHub Link --</a></div>
+									</div>
 								</div>
 							</div>
 						</th> 
 						<th class="colRight">
 							<div id="pc7" class="singleProjectContainer">
-								<p id="7" style="padding: 8vh 0vw; user-select: none;"
-								onclick="onProject(this)">Latency Graph</p>
+								<div id="7" onclick="onProject(this)">
+									<div class="languages">
+										<table style="margin: 0 auto;">
+											<th><img style="margin-top:10%; width:35%; height:100%;" src="../content/py.png"></th>
+										</table>
+									</div>
+									<p class="projectTitle">Latency Graph</p>
+								</div>
 								
 								<div id="p7" class="singleProject">
-
+									<video width="100%" controls>
+										<source src="../content/EyeBookReaderDemo.mp4" type="video/mp4">
+									</video>
+									<div class="projectTextBox">
+										<p class="projectText">
+										This was a project for a Human-Computer-Interaction course. I worked
+										in a team with three other classmates. We were tasked with creating 
+										an interface that would allow people with disabilites or missing limbs
+										to more easily interact with an e-reader. Our solution was to use eye
+										tracking to allow scrolling of the page if you look at the top or
+										bottom of the page. I was tasked with implementing the eye tracking
+										onto our website. We used a library called WebGazer to track the eye
+										movements of the user. Our finished product allowed the user to upload
+										a pdf or txt document and scroll up and down when looking at the top and
+										bottom of the screen.
+										</p>
+										<div style="margin: 2% 0"><a style="color: var(--link)" href="https://github.com/Colin6442/eyebook-reader" target="_blank">-- GitHub Link --</a></div>
+									</div>
 								</div>
 							</div>
 						</th>
-					</tr>
-					<!-- <tr class="projectRows">
-						<th class="colLeft">
-							<div id="pc8" class="singleProjectContainer" onclick="onProject(this, '50vh')">
-								<p style="padding: 8vh 0vw;">N/A</p>
-								<div id="p8" class="singleProject">
-								</div>
-							</div>
-						</th> 
-						<th class="colRight">
-							<div id="pc9" class="singleProjectContainer" onclick="onProject(this, '50vh')">
-								<p style="padding: 8vh 0vw;">N/A</p>
-								<div id="p9" class="singleProject">
-								</div>
-							</div>
-						</th>
-					</tr> -->
-					
+					</tr>					
 				</table>
 			</div>
 
