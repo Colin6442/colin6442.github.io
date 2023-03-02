@@ -6,7 +6,7 @@
 	--darkGrey: #1e1e1e;
 	--clear: #ffffff00;
 	--navBar: white;
-	--btnText: #ba2d0b;
+	--btnText: #ff8282;
 	--normalText: #d6f2ff;
 	--lighter: #ffffff20;
 	--darker: #00000030;
@@ -23,7 +23,7 @@ body {
 	background-image: url(../content/FW3.png);
 	background-repeat: no-repeat;
 	background-attachment: fixed;
-	background-size: cover;
+	background-size: 100% 100%;
 
 }
 
@@ -61,7 +61,7 @@ button{
 	height: 100%;
 	background-color:#00000000;
 	border: 1px solid var(--clear);
-	color: black;
+	color: rgb(255, 255, 255);
 	padding: 0px 0px;
 	text-align: center;
 	/* text-decoration: none; */
@@ -92,16 +92,17 @@ form{
 	/* position:fixed; */
 	height: 7vh;
 	width: 100%;
-	background-color: #ffffff;
+	background-color: #ffffff21;
 	outline: 2px solid #000000;
 	/* border-radius: 20px; */
 }
 
 .homeText{
 	font-family: "Comfortaa";
-	width: 90%;
-	margin: 10% 5%;
-	padding: 10% 0%;
+	width: 70vw;
+	margin-top: 15vh;
+	padding-top: 15vh;
+	padding-bottom: 15vh;
 	background-color: var(--lightGrey);
 	font-size: 50px;
 	text-align: center;
@@ -223,11 +224,10 @@ form{
 }
 
 .contactText{
-	height: auto;
-	width: 70%;
-	margin-top: 10%;
-	margin-left: 15%;
-	padding: 5% 0%;
+	/* position: fixed; */
+	width: 50vw;
+	margin: 10vh 10vw;
+	padding: 5vh 0;
 	background-color: var(--lightGrey);
 	font-size: 30px;
 	text-align: center;
