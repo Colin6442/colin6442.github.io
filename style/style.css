@@ -24,7 +24,6 @@ body {
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: 100% 100%;
-
 }
 
 .main{
@@ -36,6 +35,23 @@ body {
 	margin-right: 15vw;
 	/* background-color: var(--lightGrey); */
 	/* outline: 2px solid white; */
+}
+
+.fullImageContainer{
+	position: fixed;
+	width: 100vw;
+	height: 100vh;
+	/* background-color: blue; */
+	z-index: 5;
+	/* display: flex; */
+	display: none;
+	align-items: center;
+	justify-content: center;
+}
+
+.fullImage{
+	position: fixed;
+	/* background-color: red; */
 }
 
 .mainLeft{

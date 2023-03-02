@@ -72,3 +72,16 @@ function onProject (element) {
 	}
 
 }
+
+function fullImage(index){
+	if(index == "i0"){
+		document.getElementById("i0").style.display = "none";
+		document.getElementById("i1").style.display = "none";
+		document.getElementById("i2").style.display = "none";
+		document.getElementById("i3").style.display = "none";
+
+	}else{
+		document.getElementById("i0").style.display = "flex";
+		document.getElementById(index).style.display = "";
+	}
+}

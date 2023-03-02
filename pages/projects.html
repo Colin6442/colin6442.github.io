@@ -12,6 +12,13 @@
 	</head>
 
 	<body>
+		<div id="i0" class="fullImageContainer" onclick="fullImage('i0')">
+			<div class="fullImage">
+				<img id="i1" style="display: none;" src="../content/networksDemo.png">
+				<img id="i2" style="display: none;" src="../content/Courses.png">
+				<img id="i3" style="display: none;" src="../content/latencyDemo.png">
+			</div>
+		</div>
 		<div class="nav">
 			<table style="margin-left: 2vw;">
 				<th>
@@ -84,6 +91,7 @@
 								</div>
 								
 								<div id="p1" class="singleProject">
+									<img id="i1" style="width:100%" src="../content/networksDemo.png"  onclick="fullImage('i1')">
 									<div class="projectTextBox">
 										<p class="projectText">
 										This was a project for a networks class that covered 
@@ -149,7 +157,7 @@
 								<div id="p3" class="singleProject">
 									<table>
 										<th style="width: 40%; height: 100%;">
-											<img class="imgs" src="../content/Courses.png" width="100%" height="100%">
+											<img id="i3" class="imgs" src="../content/Courses.png" width="100%" height="100%"  onclick="fullImage('i2')">
 										</th>
 										<th style="width: 60%; height: 100%; vertical-align: top;">
 											<div class="projectTextBox">
@@ -285,7 +293,7 @@
 								</div>
 								
 								<div id="p7" class="singleProject">
-									<img style="width:100%" src="../content/latencyDemo.png">
+									<img id="i3" style="width:100%" src="../content/latencyDemo.png" onclick="fullImage('i3')">
 									<div class="projectTextBox">
 										<p class="projectText">
 										This program was created to display the ping/latency currently being 
