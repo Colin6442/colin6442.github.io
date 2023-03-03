@@ -30,10 +30,9 @@
 						<button type="submit">Resume</button>
 					</form>
 				</th> <th>
-					<form name="projects" action="/pages/projects.html">
+					<form name="projects" action="/pages/mobileProjects.html">
 						<button class="buttonPage" type="submit">Projects</button>
 					</form>
-					<script src="../scripts/checkMobile.js"></script>
 				</th> <th>
 					<form action="/pages/contact.html">
 						<button type="submit">Contact</button>
@@ -44,19 +43,19 @@
 		
 		<div class="mainLeft"></div>
 		<div class="mainRight"></div>
-		<div class="main">
+		<div class="main" style="width:97vw; height: 85vh; margin-left:2.5vw;">
 			<div class="projectsTableContainer">
 
 				<table class="projectsTable" cellspacing="30">
-					<tr class="projectRows"> <!-- 0 / 1 -->
-						<th class="colLeft">
+					<tr class="projectRows">
+						<th class="colMobile">
 							<div id="pc0" class="singleProjectContainer">
 								<div id="0" onclick="onProject(this)">
 									<div class="languages">
-										<table style="margin: 0 auto;">
-											<th><img style="margin-top:14%; width:35%; height:100%;" src="../content/py.png"></th>
-											<th><img style="margin-top:14%; width:45%; height:100%;" src="../content/web.png"></th>
-											<th><img style="margin-top:14%; width:40%; height:100%;" src="../content/php.png"></th>
+										<table style="margin: 0 auto;" cellspacing="30">
+											<th><img style="margin-top:14%; width:100%; height:100%;" src="../content/py.png"></th>
+											<th style="width: 16vw;"><img style="margin-top:14%; width:100%; height:100%;" src="../content/web.png"></th>
+											<th><img style="margin-top:14%; width:100%; height:100%;" src="../content/php.png"></th>
 										</table>
 									</div>
 									<p class="projectTitle">Senior Capstone</p>
@@ -80,44 +79,46 @@
 								</div>
 							</div>
 						</th>
-						<th class="colRight">
+					</tr>
+					<tr class="projectRows">
+						<th class="colMobile">
 							<div id="pc1" class="singleProjectContainer">
-								<div id="1" onclick="onProject(this)">
-									<div class="languages">
-										<table style="margin: 0 auto;">
-											<th><img style="margin-top:10%; width:35%; height:100%;" src="../content/c.png"></th>
-										</table>
+									<div id="1" onclick="onProject(this)">
+										<div class="languages">
+											<table style="margin: 0 auto;">
+												<th><img style="margin-top:10%; width:100%; height:100%;" src="../content/c.png"></th>
+											</table>
+										</div>
+										<p class="projectTitle">Networking Project</p>
 									</div>
-									<p class="projectTitle">Networking Project</p>
-								</div>
-								
-								<div id="p1" class="singleProject">
-									<img id="i1" style="width:100%" src="../content/networksDemo.png"  onclick="fullImage('i1')">
-									<div class="projectTextBox">
-										<p class="projectText">
-										This was a project for a networks class that covered 
-										design concepts and implementation features of computer networks. It 
-										was a three part project that spanned the entire semester. The idea
-										behind it was to create a rudimentary internet using simulated nodes 
-										derived from a 'skeleton project'. The first part of the project was 
-										flooding and neighbor discovery. The second was routing tables that 
-										used dijkstra's algorithm. The third part was packet reliability with 
-										TCP. Once all three were finished, the program should be able to send
-										a string of data from one node in the network to any other node that
-										was connected.
+									
+									<div id="p1" class="singleProject">
+										<img id="i1" style="width:100%" src="../content/networksDemo.png"  onclick="fullImage('i1')">
+										<div class="projectTextBox">
+											<p class="projectText">
+											This was a project for a networks class that covered 
+											design concepts and implementation features of computer networks. It 
+											was a three part project that spanned the entire semester. The idea
+											behind it was to create a rudimentary internet using simulated nodes 
+											derived from a 'skeleton project'. The first part of the project was 
+											flooding and neighbor discovery. The second was routing tables that 
+											used dijkstra's algorithm. The third part was packet reliability with 
+											TCP. Once all three were finished, the program should be able to send
+											a string of data from one node in the network to any other node that
+											was connected.
 										</p>
 									</div>
 								</div>
 							</div>
 						</th>
 					</tr>
-					<tr class="projectRows"> <!-- 2 / 3 -->
-						<th class="colLeft">
+					<tr class="projectRows">
+						<th class="colMobile">
 							<div id="pc2" class="singleProjectContainer">
 								<div id="2" onclick="onProject(this)">
 									<div class="languages">
 										<table style="margin: 0 auto;">
-											<th><img style="margin-top:8%; width:50%; height:130%;" src="../content/c++.png"></th>
+											<th style="width: 12vw;"><img style="margin-top:8%; width:100%; height:100%;" src="../content/c++.png"></th>
 										</table>
 									</div>
 									<p class="projectTitle">SuperHexagon Bot</p>
@@ -143,13 +144,15 @@
 									</div>
 								</div>
 							</div>
-						</th> 
-						<th class="colRight">
+						</th>
+					</tr>
+					<tr class="projectRows">
+						<th class="colMobile">
 							<div id="pc3" class="singleProjectContainer">
 								<div id="3" onclick="onProject(this)">
 									<div class="languages">
 										<table style="margin: 0 auto;">
-											<th><img style="margin-top:10%; width:35%; height:100%;" src="../content/py.png"></th>
+											<th><img style="margin-top:10%; width:100%; height:100%;" src="../content/py.png"></th>
 										</table>
 									</div>
 									<p class="projectTitle">UCM Course Notification</p>
@@ -187,13 +190,13 @@
 							</div>
 						</th>
 					</tr>
-					<tr class="projectRows"> <!-- 4 / 5 -->
-						<th class="colLeft">
+					<tr class="projectRows">
+						<th class="colMobile">
 							<div id="pc4" class="singleProjectContainer">
 								<div id="4" onclick="onProject(this)">
 									<div class="languages">
 										<table style="margin: 0 auto;">
-											<th><img style="margin-top:8%; width:60%; height:120%;" src="../content/web.png"></th>
+											<th style="width: 16vw;"><img style="margin-top:8%; width:100%; height:100%;" src="../content/web.png"></th>
 										</table>
 									</div>
 									<p class="projectTitle">EyeBook Reader</p>
@@ -221,13 +224,15 @@
 									
 								</div>
 							</div>
-						</th> 
-						<th class="colRight">
+						</th>
+					</tr>
+					<tr class="projectRows">
+						<th class="colMobile">
 							<div id="pc5" class="singleProjectContainer">
 								<div id="5" onclick="onProject(this)">
 									<div class="languages">
 										<table style="margin: 0 auto;">
-											<th><img style="margin-top:10%; width:35%; height:100%;" src="../content/py.png"></th>
+											<th><img style="margin-top:10%; width:100%; height:100%;" src="../content/py.png"></th>
 										</table>
 									</div>
 									<p class="projectTitle">Shield Man - GDC Game</p>
@@ -253,13 +258,13 @@
 							</div>
 						</th>
 					</tr>
-					<tr class="projectRows"> <!-- 6 / 7 -->
-						<th class="colLeft">
+					<tr class="projectRows">
+						<th class="colMobile">
 							<div id="pc6" class="singleProjectContainer">
 								<div id="6" onclick="onProject(this)">
 									<div class="languages">
 										<table style="margin: 0 auto;">
-											<th><img style="margin-top:8%; width:50%; height:130%;" src="../content/c++.png"></th>
+											<th style="width: 12vw;"><img style="margin-top:8%; width:100%; height:100%;" src="../content/c++.png"></th>
 										</table>
 									</div>
 									<p class="projectTitle">Snake Game</p>
@@ -281,13 +286,15 @@
 									</div>
 								</div>
 							</div>
-						</th> 
-						<th class="colRight">
+						</th>
+					</tr> 
+					<tr class="projectRows">
+						<th class="colMobile">
 							<div id="pc7" class="singleProjectContainer">
 								<div id="7" onclick="onProject(this)">
 									<div class="languages">
 										<table style="margin: 0 auto;">
-											<th><img style="margin-top:10%; width:35%; height:100%;" src="../content/py.png"></th>
+											<th><img style="margin-top:10%; width:100%; height:100%;" src="../content/py.png"></th>
 										</table>
 									</div>
 									<p class="projectTitle">Latency Graph</p>
@@ -314,5 +321,8 @@
 
 		</div>
 	</body>
+
+
+	<script src="../scripts/checkMobile.js"></script>
 
 </html>
