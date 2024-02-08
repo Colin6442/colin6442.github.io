@@ -12,7 +12,7 @@ function easterEgg() {
 		changed = !changed;
 	}
 	if(clicks == 20 && !changed){
-		document.getElementById("homeBody").style.background = "url(../content/easterEgg.png)";
+		document.getElementById("homeBody").style.background = "url(../content/yosemite.png)";
 		document.getElementById("homeBody").style.backgroundRepeat = "no-repeat";
 		document.getElementById("homeBody").style.backgroundAttachment = "fixed";
 		document.getElementById("homeBody").style.backgroundSize = "100% 100%";
